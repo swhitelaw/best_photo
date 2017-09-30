@@ -1,5 +1,13 @@
-<% provide(:title, "Home") %>
-<h1>Best Photo</h1>
-<p>Welcome to best photo! Please feel free to browse our photos from this week or sign in to submit your own!</p>
+<div class="center jumbotron">
+  <h1>Welcome to BestPhoto</h1>
 
+  <h2>
+    This is the home page for BestPhoto where you can Post photos and win contests
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("camera.png", alt: "Rails logo"),
+            'https://boiling-headland-44629.herokuapp.com/' %>
   
